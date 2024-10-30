@@ -521,6 +521,12 @@ void CSpirvShaderGenerator::Generate()
 			case CShaderBuilder::STATEMENT_OP_LOG2:
 				GlslStdOp(GLSLstd450Log2, dstRef, src1Ref);
 				break;
+			case CShaderBuilder::STATEMENT_OP_SIN:
+				GlslStdOp(GLSLstd450Sin, dstRef, src1Ref);
+				break;
+			case CShaderBuilder::STATEMENT_OP_COS:
+				GlslStdOp(GLSLstd450Cos, dstRef, src1Ref);
+				break;
 			case CShaderBuilder::STATEMENT_OP_SQRT:
 				GlslStdOp(GLSLstd450Sqrt, dstRef, src1Ref);
 				break;

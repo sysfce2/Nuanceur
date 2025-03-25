@@ -122,7 +122,7 @@ namespace Nuanceur
 
 	inline uint32 GetSwizzleElement(SWIZZLE_TYPE swizzle, uint32 index)
 	{
-		uint32 elemCount = (swizzle >> 8);
+		FRAMEWORK_MAYBE_UNUSED uint32 elemCount = (swizzle >> 8);
 		assert(index < elemCount);
 		return (swizzle >> (index * 2)) & 0x03;
 	}
